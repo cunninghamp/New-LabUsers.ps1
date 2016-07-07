@@ -133,7 +133,7 @@ $Departments = @(
 
 # Password length and character set to use for random password generation
 $PasswordLength = 16
-$ascii=$NULL;For ($a=33;$a –le 126;$a++) {$ascii+=,[char][byte]$a }
+$ascii=$NULL;For ($a=33;$a -le 126;$a++) {$ascii+=,[char][byte]$a }
 
 
 #...................................
@@ -158,7 +158,7 @@ Function Get-TempPassword() {
         [string[]]$sourcedata
     )
 
-    For ($loop=1; $loop –le $length; $loop++)
+    For ($loop=1; $loop -le $length; $loop++)
     {
         $TempPassword+=($sourcedata | Get-Random)
     }
