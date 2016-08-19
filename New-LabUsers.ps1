@@ -179,6 +179,7 @@ if (!(Test-Path $InputFileName))
 
 # Create the OU structure to hold the test users and other objects
 
+$Forest = Get-ADForest
 $Domain = Get-ADDomain
 
 $OUPath = "OU=" + $CompanyOU + "," + $Domain.DistinguishedName
@@ -259,6 +260,7 @@ foreach ($Name in $ListOfNames)
                -GivenName $Name.FirstName `
                -Surname $Name.LastName `
                -SamAccountName $Name.AccountName `
+               -UserPrincipalName "$($Name.FirstName).$($Name.LastName)@$($Forest.Name)" `
                -Department $Name.Department `
                -Path $UsersOU `
                -Enabled $true `
