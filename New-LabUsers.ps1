@@ -34,26 +34,18 @@ Uses the MyNames.txt file to generate the list of user accounts in an OU
 called "TestLab" in Active Directory.
 
 .NOTES
-Script written by: Paul Cunningham
-
-Random Password Generator function from Scripting Guys blog post:
-http://blogs.technet.com/b/heyscriptingguy/archive/2013/06/03/generating-a-new-password-with-windows-powershell.aspx
-
-Random name list generated from:
-http://listofrandomnames.com
+Written by: Paul Cunningham
 
 Find me on:
 
-* My Blog:	http://paulcunningham.me
+* My Blog:	https://paulcunningham.me
 * Twitter:	https://twitter.com/paulcunningham
-* LinkedIn:	http://au.linkedin.com/in/cunninghamp/
+* LinkedIn:	https://au.linkedin.com/in/cunninghamp/
 * Github:	https://github.com/cunninghamp
 
-For more Exchange Server tips, tricks and news
-check out Exchange Server Pro.
+Random Password Generator function from Scripting Guys blog post: http://blogs.technet.com/b/heyscriptingguy/archive/2013/06/03/generating-a-new-password-with-windows-powershell.aspx
 
-* Website:	http://exchangeserverpro.com
-* Twitter:	http://twitter.com/exchservpro
+Random name list generated from: http://listofrandomnames.com
 
 License:
 
